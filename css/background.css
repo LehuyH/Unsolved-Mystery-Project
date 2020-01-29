@@ -1,0 +1,16 @@
+.backgroundVideo{
+    min-width: 100%;
+    min-height: 100%;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+}
+.header{
+    padding: 20%;
+}
+.content{
+    background-color: rgba(58, 52, 52, 0.7);
+}
+#transitionColor{
+    background-color: #7BA8BF;
+}
