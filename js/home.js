@@ -73,6 +73,14 @@ anime.timeline()
     easing: "easeOutExpo",
     duration: 1200,
   }).add({
+    targets: '#subheader2',
+    translateX: [-40,0],
+    translateZ: 0,
+    opacity: [0,1],
+    easing: "easeOutExpo",
+    duration: 1200,
+    delay: 1000
+  }).add({
     targets: '#continue',
     translateY: [40,0],
     translateZ: 0,

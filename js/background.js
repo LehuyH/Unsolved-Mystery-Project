@@ -1,78 +1,87 @@
-
-
 //INIT
 var sounds = {
-    goodNight : new Howl({
-      src: ['../assets/goodnight.wav']
-    }),
-    background : new Howl({
-      src: ['../assets/background.mp3'],
-      volume: 0.5,
-      loop:true,
+  goodNight: new Howl({
+    src: ['../assets/goodnight.wav']
+  }),
+  background: new Howl({
+    src: ['../assets/background.mp3'],
+    volume: 0.1,
+    loop: true,
 
-    }),
-    flyBy: new Howl({
-      src: ['../assets/flyby.wav']
-    }),
-    click: new Howl({
-      src: ['../assets/ui/Click_Electronic_02.mp3']
-    })
-
-
-  }
-  document.getElementById('contentPlane').style.visibility="hidden"
-   sounds.background.play()
+  }),
+  flyBy: new Howl({
+    src: ['../assets/flyby.wav']
+  }),
+  click: new Howl({
+    src: ['../assets/ui/Click_Electronic_02.mp3']
+  })
 
 
+}
+document.getElementById('contentPlane').style.visibility = "hidden"
+document.getElementById('continue').addEventListener("click", next)
+
+sounds.background.play()
+var wavesurfer = WaveSurfer.create({
+  container: '#waveform',
+  waveColor: 'white',
+  progressColor: 'purple'
+});
+wavesurfer.load('../assets/atc.wav');
 
 
 
+//Transition IN
 
-   anime.timeline().add({
+anime.timeline().add({
   targets: "#transitionColor",
   opacity: 0,
   duration: 1000,
   easing: "easeInQuad",
-  delay:500
+  delay: 500
 }).add({
-  targets: "#header",
-  opacity: [0,1],
-  translateY:[200,0],
+  targets: ["#header", "#leadIn"],
+  opacity: [0, 1],
+  translateY: [200, 0],
   duration: 500,
   easing: "easeInOutQuad",
 
 })
 
 
-
-  function transition(){
-    document.getElementById('contentPlane').style.transform = "translateX(-100%)"
-    document.getElementById('transitionColor').style.transform = "translateX(-100%)"
-    document.getElementById('contentPlane').style.visibility="visible"
-    sounds.flyBy.play()
+function transition() {
+  document.getElementById('contentPlane').style.transform = "translateX(-100%)"
+  document.getElementById('transitionColor').style.transform = "translateX(-100%)"
+  document.getElementById('transitionColor').style.opacity = "1"
+  document.getElementById('contentPlane').style.visibility = "visible"
+  sounds.flyBy.play()
   anime({
     targets: '#contentPlane',
     translateX: 130,
-    backgroundSize:0,
+    backgroundSize: 0,
     easing: "easeInQuad",
-   duration: 2000
+    duration: 2000
   });
-  anime({ targets: '#transitionColor',
+  anime({
+    targets: '#transitionColor',
     translateX: 0,
-  backgroundColor: "#7BA8BF",
-  easing: "easeInQuad",
-   duration: 2000
+    backgroundColor: "#7BA8BF",
+    easing: "easeInQuad",
+    duration: 2000
   });
 
 
 
-  }
-  function next(){
-    transition()
-    sounds.background.fade(1, 0, 2400)
-    setTimeout(function(){
-      location.href="/background"
-    },2500)
-  }
+}
 
-  //DEBUG
+function next() {
+  sounds.click.play()
+  transition()
+  sounds.background.fade(1, 0, 2400)
+  setTimeout(function () {
+    location.href = "/background"
+  }, 2500)
+}
+
+//PLAY
+

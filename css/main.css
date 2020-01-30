@@ -16,6 +16,7 @@ html {
   color: #222;
   font-size: 1em;
   line-height: 1.4;
+  scroll-behavior: smooth;
 }
 
 /*
@@ -264,7 +265,20 @@ textarea {
   }
 }
 .transitionPlane{
-  background-color: transparent;
+  background-color: transparent !important;
+  min-width: 100%;
+  min-height: 100%;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  color: white;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+.transitionColor{
   min-width: 100%;
   min-height: 100%;
   position: fixed;
@@ -320,4 +334,15 @@ body{
 }
 .thin{
   font-weight: 100;
+}
+.vCenter{
+  margin-top: auto; margin-bottom: auto;
+}
+.planeIcon{
+  position: absolute;
+  width: 8%;
+}
+.jumbotron{
+  margin-bottom: 0px !important;
+  padding-bottom: 0.5em;
 }

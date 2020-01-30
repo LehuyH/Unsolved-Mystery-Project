@@ -6,7 +6,8 @@
     bottom: 0;
 }
 .header{
-    padding: 20%;
+    padding-top: 45vh;
+    padding-bottom: 45vh;
 }
 .content{
     background-color: rgba(58, 52, 52, 0.7);
