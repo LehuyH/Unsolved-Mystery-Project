@@ -273,15 +273,15 @@ textarea {
   color: white;
   text-align: center;
   display: flex;
-  align-items: center; 
-  justify-content: center; 
+  align-items: center;
+  justify-content: center;
   pointer-events: none;
 }
 .content{
   color:white;
   text-align: center;
   background-color: transparent;
-  
+
 }
 .backgroundVideo{
   z-index:-1;
@@ -301,11 +301,20 @@ body{
   border-radius: 2px;
   font-family: Roboto;
 
-  
+
+}
+.mysImg{
+  background-color: rgba(0, 0, 0, 0.7);
+  display: inline-block;
+  border: 3px solid #26dafd;
+  border-radius: 2px;
+  font-family: Roboto;
+
+
 }
 .caption{
-  font-size: smaller; 
-  font-style: italic; 
+  font-size: smaller;
+  font-style: italic;
   font-family: Roboto;
   font-weight: 200;
 }
