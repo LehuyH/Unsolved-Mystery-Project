@@ -30,10 +30,13 @@
     <a class="navbar-brand" href="../index.html">Goodnight MH370</a>
     <ul class="nav nav-pills">
       <li class="nav-item">
-        <a class="nav-link" href="#losingConnection">Loosing Connection</a>
+        <a class="nav-link" href="#losingConnection">Losing  Connection</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#Disappearance">The Disappearance</a>
+        <a class="nav-link" href="#path">The Path</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#search">The Search</a>
       </li>
          </ul>
   </nav>
@@ -62,7 +65,7 @@
 
 
 
-The only way a plane of this size could lose all communication was if there was a major fire or power failure in the plane. At first, it would seem possible that something like that could happen. However, just minutes before, the pilots were talking to ATC and nothing seemed out of the ordinary. There was no distress signal sent out either. A large fire would have brought down the plane promptly. Yet, satellites were still able to contact the plane. The satellites were able to ping the plane for over 6 hours suggesting the plane remained in the air for a long time.  If there was an accident, these satellite antenna would have also gone offline.
+The only way a plane of this size could lose all communication was if there was a major fire or power failure in the plane. At first, it would seem possible that something like that could happen. However, just minutes before, the pilots were talking to ATC and nothing seemed out of the ordinary. There was no distress signal sent out either. A large fire would have brought down the plane promptly.
 
 
               </p>
@@ -79,16 +82,15 @@ The only way a plane of this size could lose all communication was if there was 
 
 
 
-               <img class="mysImg" src="../img/Flightplan.svg">
+               <img class="mysImg" src="../img/com.gif">
               </svg>
 
-                <p class="caption">Flight Plan Shown In Red</p>
+                <p class="caption">Normal aircraft tracking. All of which went offline except for satellite communication (Photo by BBC)</p>
 
             </div>
             <div class="col-sm vCenter">
               <p >
-                MH370 was scheduled to take off at Kuala Lumpur International Airport and arrive at Beijing Capital International Airport 5 hours and 45 minutes later.
-
+                Yet, satellites were still able to contact the plane. The satellites were able to ping the plane for over 6 hours suggesting the plane remained in the air for a long time. If there was an accident, these satellite antenna would have also gone offline.
 
 
 
@@ -98,23 +100,51 @@ The only way a plane of this size could lose all communication was if there was 
               </p>
             </div>
 
+          </div>
+     
+
+
+          </img>
+        </div>
+        <br><br><br>
+        <div id="path"class="container">
+          <h1 class="display-4">The Path</h1>
+          <p>Another important detail that disproves that the disappearance was an accident was where the plane flew after the connection was lost. Not only was the plane still up after connection was lost, but another method of tracking, military radar, kept tabs on the plane even though the normal ways of tracking were offline. </p>
+          <br>
+          <div class="row">
+            <div class="col-sm vCenter">
+              <p >
+
+
+
+                Another important detail that disproves that the disappearance was an accident was where the plane flew after the connection was lost. Not only was the plane still up after connection was lost, but another method of tracking, military radar, kept tabs on the plane even though the normal ways of tracking were offline. <br><br> The data from the radar shows that the plane took a slight right turn then took a large left turn almost 180 degrees back towards Malaysia. If there was an accident, turning back to Malaysia to land would make sense as that was where the closest land was located. However the plane never attempted to land, it continued flying in a straight line until the plane took a slight right at Penang Island. From there the plane continued to fly in that direction until the plane went out of military radar range. 
+
+
+              </p>
+            </div>
+            <div class="col-sm">
+              <img class="mysImg" style="width:80%;height:80%"
+                src="../img/path.png">
+                <p class="caption">A map of the flight path</p>
+            </div>
           </div>
           <div class="row">
 
             <div class="col-sm">
 
 
-              <div id="waveform"></div>
-             <button onclick="wavesurfer.play()"class="btn btn-secondary"><i class="fas fa-play"></i></button>
-             <button onclick="wavesurfer.pause()"class="btn btn-secondary"><i class="fas fa-pause"></i></button>
-                <p class="caption">Last couple of minutes of ATC and MH370 communication</p>
+
+               <img class="mysImg" src="../img/satglobe.png">
+              </svg>
+
+                <p class="caption">Location rings shows the possible locations of the plane</p>
 
             </div>
             <div class="col-sm vCenter">
-              <p>
-               After takeoff, the flight was going smoothly. The pilots keep contact with air traffic control throughout.
-
-
+              <p >
+                At this point, the only form of communication that was still online was the satellite antenna. The satellites made multiple handshakes or pings with the plane. Although the pings don't provide location data, analysts were still able to calculate how fast the plane was going based on the time it took for the plane to respond. The plane was going at a normal speed of 600MPH away from the satellite based on this data, multiple rings were made showing the possible locations of the planes.
+                <br><br>
+                By now it is clear that someone was in control of the plane, in the event of an accident the plane would have likely crashed earlier or landed when it flew over malyasia. The precise turns made also means that the likelyhood of the plane running on autopilot is low. Someone was still in manual control of the plane.
 
 
 
@@ -124,16 +154,13 @@ The only way a plane of this size could lose all communication was if there was 
             </div>
 
           </div>
-
-
-
-          </img>
-        </div>
-        <br><br><br>
-        <div id="Disappearance"class="container">
-          <h1 class="display-4">The Disappearance</h1>
-          <p>Click the button to learn about the disappearance</p>
-          <button id="continue" class="btn btn-secondary">Continue <i class="fas fa-chevron-right"></i></button>
+          <br>
+        
+          <div id="Disappearance"class="container">
+            <h1 id="search"class="display-4">The Search</h1>
+            <p>Click the button to learn about the S\search</p>
+            <button id="continue" class="btn btn-secondary">Continue <i class="fas fa-chevron-right"></i></button>
+          </div>
         </div>
       </div>
 
@@ -160,7 +187,7 @@ The only way a plane of this size could lose all communication was if there was 
   </div>
 
   <div id='transitionPlane' class="transitionPlane">
-    <div id="contentPlane" class="content">
+    <div id="contentPlane">
       <img src="../img/plane.svg">
 
 
@@ -188,7 +215,7 @@ The only way a plane of this size could lose all communication was if there was 
   </script>
   <script src="../js/plugins.js"></script>
   <script src="../js/main.js"></script>
-  <script src="../js/background.js"></script>
+  <script src="../js/disappearance.js"></script>
 
 
 </body>
