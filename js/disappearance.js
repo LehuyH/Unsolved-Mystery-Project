@@ -7,7 +7,7 @@ var sounds = {
       src: ['../assets/background.mp3'],
       volume: 0.1,
       loop: true,
-  
+
     }),
     flyBy: new Howl({
       src: ['../assets/flyby.wav']
@@ -15,19 +15,19 @@ var sounds = {
     click: new Howl({
       src: ['../assets/ui/Click_Electronic_02.mp3']
     })
-  
-  
+
+
   }
   document.getElementById('contentPlane').style.visibility = "hidden"
   document.getElementById('continue').addEventListener("click", next)
-  
+
   sounds.background.play()
 
-  
-  
-  
+
+
+
   //Transition IN
-  
+
   anime.timeline().add({
     targets: "#transitionColor",
     opacity: 0,
@@ -40,10 +40,10 @@ var sounds = {
     translateY: [200, 0],
     duration: 500,
     easing: "easeInOutQuad",
-  
+
   })
-  
-  
+
+
   function transition() {
     document.getElementById('contentPlane').style.transform = "translateX(-100%)"
     document.getElementById('transitionColor').style.transform = "translateX(-100%)"
@@ -64,20 +64,19 @@ var sounds = {
       easing: "easeInQuad",
       duration: 2000
     });
-  
-  
-  
+
+
+
   }
-  
+
   function next() {
     sounds.click.play()
     transition()
     sounds.background.fade(1, 0, 2400)
     setTimeout(function () {
-      location.href = "/background"
+      location.href = "/search"
     }, 2500)
   }
-  
+
   //PLAY
-  
-  
+
