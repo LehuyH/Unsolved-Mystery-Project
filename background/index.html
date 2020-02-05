@@ -21,7 +21,7 @@
   <script src="https://unpkg.com/wavesurfer.js"></script>
 </head>
 
-<body  data-spy="scroll" data-target="#navbar" data-offset="50">
+<body data-spy="scroll" data-target="#navbar" data-offset="50">
   <!--[if IE]>
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
   <![endif]-->
@@ -30,10 +30,10 @@
     <a class="navbar-brand" href="../index.html">Goodnight MH370</a>
     <ul class="nav nav-pills">
 
-<li class="nav-item active btn-secondary">
+      <li class="nav-item active btn-secondary">
         <a class="nav-link" href="/background">Background</a>
       </li>
-<li class="nav-item">
+      <li class="nav-item">
         <a class="nav-link" href="/disappearance">The Disappearance</a>
       </li>
       <li class="nav-item">
@@ -42,115 +42,117 @@
       <li class="nav-item">
         <a class="nav-link" href="/theories">The Theories</a>
       </li>
- <li class="nav-item">
+      <li class="nav-item">
         <a class="nav-link" href="/citations">Work Cited</a>
       </li>
-         </ul>
+    </ul>
   </nav>
-    <div class="content">
+  <div class="content">
 
-      <div class="header">
-        <video class="backgroundVideo" src="../assets/video.webm" autoplay="true" muted></video>
-        <h1 id='header' class="textInvis display-2">What Is MH370??</h1>
-        <div id='content' class="lead">
-          <p class="textInvis" id="leadIn"> What do we know about this flight?</p>
-
-
+    <div class="header">
+      <video class="backgroundVideo" src="../assets/video.webm" autoplay="true" muted></video>
+      <h1 id='header' class="textInvis display-2">What Is MH370??</h1>
+      <div id='content' class="lead">
+        <p class="textInvis" id="leadIn"> What do we know about this flight?</p>
 
 
-        </div>
+
+
       </div>
-      <div class="jumbotron jumbotron-fluid">
-        <div class="container" id="flightPlan">
-          <h1 class="display-4">The Flight Plan</h1>
-          <br>
-          <div class="row">
-            <div class="col-sm vCenter">
-              <p >
-               The plane was a Boeing 777. It carried 227 passengers and 12 crew members. It was piloted by Captain Zaharie Ahmad Shah and was co-piloted by Fariq Abdul Hamid. There were no technical issues detected before the plane took off.
-
-
-
-
-              </p>
-            </div>
-            <div class="col-sm">
-              <img class="mysImg" style="width:80%;height:80%"
-                src="../img/plane.jpg">
-                <p class="caption">The Plane Taking Off in 2011</p>
-            </div>
-          </div>
-          <div class="row">
-
-            <div class="col-sm">
-
-
-
-               <img class="mysImg" src="../img/Flightplan.svg">
-              </svg>
-
-                <p class="caption">Flight Plan Shown In Red</p>
-
-            </div>
-            <div class="col-sm vCenter">
-              <p >
-                MH370 was scheduled to take off at Kuala Lumpur International Airport and arrive at Beijing Capital International Airport 5 hours and 45 minutes later.
-
-
-
-
-
-
-
-              </p>
-            </div>
-
-          </div>
-          <div class="row">
-
-            <div class="col-sm">
-
-
-              <div id="waveform"></div>
-             <button onclick="wavesurfer.play()"class="btn btn-secondary"><i class="fas fa-play"></i></button>
-             <button onclick="wavesurfer.pause()"class="btn btn-secondary"><i class="fas fa-pause"></i></button>
-                <p class="caption">Last couple of minutes of ATC and MH370 communication</p>
-
-            </div>
-            <div class="col-sm vCenter">
-              <p>
-               After takeoff, the flight was going smoothly. The pilots keep contact with air traffic control throughout.
-
-
-
-
-
-
-
-              </p>
-            </div>
-
-          </div>
-
-
-
-          </img>
-        </div>
-        <br><br><br>
-        <div id="Disappearance"class="container">
-          <h1 class="display-4">The Disappearance</h1>
-          <p>Click the button to learn about the disappearance</p>
-          <button id="continue" class="btn btn-secondary">Continue <i class="fas fa-chevron-right"></i></button>
-        </div>
-      </div>
-
-
-
-
-
-
-
     </div>
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container" id="flightPlan">
+        <h1 class="display-4">The Flight Plan</h1>
+        <br>
+        <div class="row">
+          <div class="col-sm vCenter">
+            <p>
+              According to a preliminary report issued by the Malaysian government. The plane was a Boeing 777. It
+              carried 227 passengers and 12 crew members. It was piloted by Captain Zaharie Ahmad Shah and was
+              co-piloted by Fariq Abdul Hamid. There were no technical issues detected before the plane took off.
+
+
+
+
+            </p>
+          </div>
+          <div class="col-sm">
+            <img class="mysImg" style="width:80%;height:80%" src="../img/plane.jpg">
+            <p class="caption">The Plane Taking Off in 2011 (Image from Laurent ERRERA)</p>
+          </div>
+        </div>
+        <div class="row">
+
+          <div class="col-sm">
+
+
+
+            <img class="mysImg" src="../img/Flightplan.svg">
+            </svg>
+
+            <p class="caption">Flight Plan Shown In Red</p>
+
+          </div>
+          <div class="col-sm vCenter">
+            <p>
+              MH370 was scheduled to take off at Kuala Lumpur International Airport and arrive at Beijing Capital
+              International Airport 5 hours and 45 minutes later.
+
+
+
+
+
+
+
+            </p>
+          </div>
+
+        </div>
+        <div class="row">
+
+          <div class="col-sm">
+
+
+            <div id="waveform"></div>
+            <button onclick="wavesurfer.play()" class="btn btn-secondary"><i class="fas fa-play"></i></button>
+            <button onclick="wavesurfer.pause()" class="btn btn-secondary"><i class="fas fa-pause"></i></button>
+            <p class="caption">Last couple of minutes of ATC and MH370 communication</p>
+
+          </div>
+          <div class="col-sm vCenter">
+            <p>
+              After takeoff, the flight was going smoothly. The pilots keep contact with air traffic control throughout.
+
+
+
+
+
+
+
+            </p>
+          </div>
+
+        </div>
+
+
+
+        </img>
+      </div>
+      <br><br><br>
+      <div id="Disappearance" class="container">
+        <h1 class="display-4">The Disappearance</h1>
+        <p>Click the button to learn about the disappearance</p>
+        <button id="continue" class="btn btn-secondary">Continue <i class="fas fa-chevron-right"></i></button>
+      </div>
+    </div>
+
+
+
+
+
+
+
+  </div>
 
   </div>
   </div>
@@ -167,7 +169,7 @@
   </div>
 
   <div id='transitionPlane' class="transitionPlane">
-    <div id="contentPlane"  >
+    <div id="contentPlane">
       <img src="../img/plane.svg">
 
 
