@@ -122,7 +122,7 @@ function next(){
   transition()
   sounds.background.fade(1, 0, 2400)
   setTimeout(function(){
-    location.href="/background"
+    location.href="background/"
   },2500)
 }
 

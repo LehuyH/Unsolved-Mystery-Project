@@ -74,7 +74,7 @@ var sounds = {
     transition()
     sounds.background.fade(1, 0, 2400)
     setTimeout(function () {
-      location.href = "/theories"
+      location.href = "theories/"
     }, 2500)
   }
 
